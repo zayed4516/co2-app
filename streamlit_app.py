@@ -10,3 +10,4 @@ with open('model.pkl','rb') as file:
  
  res=model.predict([[f1,f2,f3]])
  
+ 
