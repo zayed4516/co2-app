@@ -17,7 +17,7 @@ import numpy as np
 
 
 # تحميل النموذج
-model = pickle.load(open('model.pkl', 'rb')
+model = pickle.load(open('model.pkl', 'rb'))
 
 # عنوان التطبيق
 st.title('Model Prediction App')
