@@ -9,5 +9,5 @@ with open('model.pkl','rb') as file:
  model= pickle.load(file)
  
  res=model.predict([[f1,f2,f3]])
- 
- 
+
+st.write(res[0])
