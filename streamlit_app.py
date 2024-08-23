@@ -14,11 +14,15 @@
 import streamlit as st
 import pickle
 import numpy as np
-
+from PIL import Image
 
 # تحميل النموذج
 model = pickle.load(open('model.pkl', 'rb'))
 
+image = Image.open('logo.png')
+
+# عرض الصورة
+st.image(image, use_column_width=True)
 # عنوان التطبيق
 st.title('Model Prediction App')
 
